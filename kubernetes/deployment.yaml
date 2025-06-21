@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: dorkari-toythya
+  labels:
+    app: dorkari-toythya
 spec:
   replicas: 1
   selector:
@@ -14,6 +16,8 @@ spec:
     spec:
       containers:
         - name: dorkari-toythya
-          image: tangoankur/dorkari-toythya:latest
+          image: tangoankur/dorkari-toythya:latest  # Replace with your actual image
+          imagePullPolicy: IfNotPresent
           ports:
-            - containerPort: 8000
+            - name: http
+              containerPort: 8000
