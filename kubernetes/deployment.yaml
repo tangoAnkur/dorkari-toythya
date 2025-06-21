@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dorkari-toythya
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dorkari-toythya
+  template:
+    metadata:
+      labels:
+        app: dorkari-toythya
+    spec:
+      containers:
+        - name: dorkari-toythya
+          image: tangoankur/dorkari-toythya:latest
+          ports:
+            - containerPort: 8000
