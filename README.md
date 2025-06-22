@@ -41,9 +41,11 @@ Apply the manifests inside `kubernetes/`:
 kubectl apply -f kubernetes/
 ```
 
-## 📷 Screenshot
+## ▶️ Appliction Demo
 
-![Dorkari Toythya UI](app_screenshot.png)
+![Dorkari Toythya Demo](dorkari_tothya_app.gif)
+
+
 
 ---
 
