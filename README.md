@@ -43,7 +43,7 @@ kubectl apply -f kubernetes/
 
 ## 📷 Screenshot
 
-![Dorkari Toythya UI](https://via.placeholder.com/800x400.png?text=Dorkari+Toythya+Homepage)
+![Dorkari Toythya UI](app_screenshot.png)
 
 ---
 
